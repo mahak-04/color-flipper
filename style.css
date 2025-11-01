@@ -1,0 +1,73 @@
+:root {
+    --primary-color: #4CAF50; /* A nice green */
+    --text-color: #333;
+    --background-light: #f1f5f8;
+    --button-hover: #45a049;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-light); /* Initial background color */
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: var(--text-color);
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.color-text {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: var(--button-hover);
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Optional: Add some basic responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .btn {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}
