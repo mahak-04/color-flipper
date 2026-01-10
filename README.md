@@ -1,4 +1,4 @@
-# Simple Color Flipper
+# Color Flipper
 
 A fun and interactive web application that allows users to change the background color of the page with the click of a button. Each click generates a new random hexadecimal color.
 
